@@ -1,3 +1,20 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd">
-  <Label text="finally." />
+<Page class="main-page" xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <Page.actionBar>
+        <ActionBar title="Keynotes" />
+    </Page.actionBar>
+    <ScrollView class="main-page-scroll">
+        <Repeater items="{{ data }}">
+            <Repeater.itemTemplate>
+                <StackLayout class="card" tap="itemTap">
+                    <StackLayout orientation="horizontal">
+                        <Image class="card--image" src="{{ '~/assets/images/events/' + image }}" />
+                        <StackLayout class="card--label">
+                            <Label class="card--title" text="{{ title }}" textWrap="true" />
+                            <Label class="card--description" text="{{ when }}" textWrap="true" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Repeater.itemTemplate>
+        </Repeater>
+    </ScrollView>
 </Page>

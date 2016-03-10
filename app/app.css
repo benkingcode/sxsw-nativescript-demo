@@ -1,0 +1,72 @@
+Page {
+    background-color: #fff;
+}
+
+ActionBar {
+    background-color: #AD1AAC;
+    color: #fff;
+}
+
+.logo {
+    height: 35;
+}
+
+.main-page {
+    background-color: #FAF3FA;
+    padding-top: 10;
+}
+
+.card {
+    background-color: #fff;
+    margin: 5 10;
+    border-width: 1;
+    border-color: #F3DCF3;
+    border-radius: 3;
+}
+
+.card--image {
+    height: 100;
+}
+
+.card--label {
+    padding: 15;
+}
+
+.card--title {
+    font-weight: bold;
+    font-size: 13;
+}
+
+.card--description {
+    margin-top: 5;
+    font-size: 12;
+    color: #777;
+}
+
+.event--info {
+    padding-bottom: 30;
+}
+
+.event--body {
+    padding: 15;
+}
+
+.event--title {
+    font-size: 26;
+    margin-bottom: 10;
+}
+
+.event--label {
+    color: #555;
+    font-size: 13;
+    margin-bottom: 5;
+}
+
+.event--description {
+    margin-top: 25;
+    color: #444;
+}
+
+.calendar--added {
+    color: green;
+}

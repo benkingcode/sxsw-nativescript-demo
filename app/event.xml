@@ -1,0 +1,15 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" navigatingTo="navigatedTo">
+    <ScrollView>
+        <StackLayout class="event--info">
+            <Image src="{{ '~/assets/images/events/' + event.image }}" />
+            <StackLayout class="event--body">
+                <Label class="event--title" text="{{ event.title }}" textWrap="true" />
+                <Label class="event--label" text="{{ event.when }}" textWrap="true" />
+                <Label class="event--label" text="{{ event.location }}" textWrap="true" />
+                <Label class="event--description" text="{{ event.body }}" textWrap="true" />
+            </StackLayout>
+            <Button text="Share" tap="share" />
+            <Button text="{{ calendar.addLabel }}" tap="{{ calendar.add }}" />
+        </StackLayout>
+    </ScrollView>
+</Page>
